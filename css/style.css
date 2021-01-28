@@ -1,6 +1,20 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.header{
+  padding: 15px 0;
+}
+
 .navigation {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .navigation-link {
@@ -31,6 +45,141 @@
   align-items: center;
 }
 
-.button-icon{ 
+.button-icon, .button-price{ 
   margin-right: 10px;
 }
+
+.button-icon:last-child{ 
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.slide {
+ padding-top: 90px;
+ padding-bottom: 90px;
+}
+
+.slide-1 {
+  background: #b4d1e0 url(../img/slide-image-1.png) no-repeat top right 10%;
+}
+
+.label {
+  padding: 5px 12px;
+  background: #3DC47E;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.slide-title{
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  color: #262D33;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.slide-description{
+font-size: 18px;
+line-height: 30px;
+color: #4B5157;
+margin-bottom: 40px;
+min-width: 335px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-nav{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.slider-button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card{
+  min-height: 370px;
+  border-radius: 10px;
+  padding-top: 60px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 80px;
+}
+
+.card-1{
+  background: #e3e2e3 url(../img/card-image-1.jpg) no-repeat top right;
+  background-size: cover;
+}
+
+.card-2 {
+  background: #000 url(../img/card-image-2.jpg) no-repeat top right;
+  background-size: cover;
+}
+
+.card-3 {
+  background: #ccd5e6 url(../img/card-image-3.png) no-repeat top right 10%;
+  background-size: contain;
+  padding-top: 35px;
+}
+
+.card-4 {
+  background: #FF4F52 url(../img/card-image-4.png) no-repeat top right;
+  background-size: contain;
+  padding-top: 35px;
+  padding-left: 25px;
+}
+
+.card-title {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+  max-width: 222px;
+  margin: 0;
+}
+
+.card-title.large{
+  min-width: 420px;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-text.large{
+  min-width: 420px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card-text {
+font-size: 14px;
+line-height: 20px;
+color: #4B5157;
+max-width: 175px;
+margin-bottom: 25px;
+}
+
+.card-price{
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.text-light{ 
+  color: #fff;
+}
+
