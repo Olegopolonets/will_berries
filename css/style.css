@@ -55,12 +55,21 @@ body {
 }
 
 .slide {
- padding-top: 90px;
- padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  min-height: 568px;
 }
 
 .slide-1 {
   background: #b4d1e0 url(../img/slide-image-1.png) no-repeat top right 10%;
+}
+
+.slide-2 {
+  background: #bebd56 url(../img/slide-image-1.png) no-repeat top right 10%;
+}
+
+.slide-3 {
+  background: #da5b70 url(../img/slide-image-1.png) no-repeat top right 10%;
 }
 
 .label {
@@ -99,6 +108,7 @@ min-width: 335px;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+  z-index: 9;
 }
 
 .slider-button{
@@ -290,4 +300,36 @@ margin-bottom: 25px;
 .payment-logo {
   vertical-align: middle;
   margin-right: 25px;
+}
+
+@media(max-width: 1200px) {
+  .slide-1 {
+    background-size: cover;
+  }
+
+  .card-3 {
+    background-size: cover;
+  }
+}
+
+@media(max-width: 992px) {
+  .slider-nav {
+    display: none;
+  }
+}
+
+@media(max-width: 576px) {
+  .slide-title {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+  .card {
+    background-position: left top;
+    padding: 30px;
+    min-height: 300px;
+  }
+  .card-4 {
+    background-position: right top;
+  }
 }
